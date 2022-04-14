@@ -8,19 +8,22 @@ var hifiButton = document.querySelector('#hifiButton');
 
 function showLofi() {
     expositieContainer.style.display = "none";
+    mefiExpositie.style.display = "none";
     lofiExpositie.style.display = "flex";
 }
-function showMefi() {
+
+function mefiShow() {
     expositieContainer.style.display = "none";
     lofiExpositie.style.display = "none";
     mefiExpositie.style.display = "flex";
 }
-function showHifi() {
+
+function hifiShow() {
     lofiExpositie.style.display = "none";
     mefiExpositie.style.display = "none";
     expositieContainer.style.display = "flex";
 }
 
 lofiButton.addEventListener('click', showLofi);
-mefiButton.addEventListener('click', showMeFi);
-hifiButton.addEventListener('click', showHiFi);
+mefiButton.addEventListener('click', mefiShow);
+hifiButton.addEventListener('click', hifiShow);
